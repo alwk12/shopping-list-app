@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Shopping List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>My Shopping List</h1>
+
+      <div class="inputs">
+        <input type="text" id="item-input" placeholder="What do you need?" />
+        <input
+          type="number"
+          id="price-input"
+          placeholder="Price (Ksh)"
+          min="0"
+        />
+        <button id="add-btn">Add</button>
+      </div>
+
+      <ul id="list"></ul>
+
+      <div class="bottom">
+        <p>Total of all items: Ksh <span id="total-all">0</span></p>
+        <p>Total of purchased items: Ksh <span id="total-bought">0</span></p>
+      </div>
+
+      <div class="buttons">
+        <button id="mark-btn">Mark Purchased</button>
+        <button id="clear-btn">Clear List</button>
+      </div>
+
+      <p class="note">
+        Click an item to mark it as purchased. Click it again to undo.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
