@@ -1,96 +1,94 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #e8e8e8;
-    padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #e8e8e8;
+  padding: 30px;
 }
- 
-.wrapper {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
 }
- 
+
 h1 {
-    text-align: center;
+  text-align: center;
 }
- 
+
 .inputs {
-    display: flex;
-    gap: 8px;
-    margin: 20px 0;
+  display: flex;
+  gap: 8px;
+  margin: 20px 0;
 }
- 
+
 input {
-    padding: 8px;
-    font-size: 16px;
+  padding: 8px;
+  font-size: 16px;
 }
- 
-#item-input {
-    flex: 2;
+
+#item {
+  flex: 2;
 }
- 
+
 #price-input {
-    flex: 1;
+  flex: 1;
 }
- 
+
 button {
-    padding: 8px 14px;
-    font-size: 16px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 8px 14px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
- 
+
 button:hover {
-    background-color: #555;
+  background-color: #555;
 }
- 
+
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
- 
+
 li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-bottom: 8px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  cursor: pointer;
 }
- 
+
 li.done {
-    background-color: #c8e6c9;
+  background-color: #c8e6c9;
 }
- 
+
 li.done span {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
- 
-.bottom {
-    border-top: 1px solid #ccc;
-    margin-top: 15px;
-    padding-top: 10px;
-    font-weight: bold;
+
+p {
+  font-weight: bold;
 }
- 
+
 .buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
- 
+
 #clear-btn:hover {
-    background-color: red;
+  background-color: red;
 }
- 
+
 .note {
-    font-size: 14px;
-    color: gray;
+  font-size: 14px;
+  font-weight: normal;
+  color: gray;
 }

@@ -1,4 +1,4 @@
-const itemInput = document.getElementById("item-input");
+const itemInput = document.getElementById("item");
 const priceInput = document.getElementById("price-input");
 const addBtn = document.getElementById("add-btn");
 const markBtn = document.getElementById("mark-btn");
@@ -7,7 +7,6 @@ const list = document.getElementById("list");
 const totalAll = document.getElementById("total-all");
 const totalBought = document.getElementById("total-bought");
  
-
 let items = JSON.parse(localStorage.getItem("shoppingItems")) || [];
  
 function saveItems() {
@@ -46,7 +45,7 @@ function showList() {
     totalAll.textContent = total;
     totalBought.textContent = boughtTotal;
 }
-
+ 
 function addItem() {
     const name = itemInput.value.trim();
     const price = Number(priceInput.value);
@@ -92,7 +91,6 @@ clearBtn.addEventListener("click", function () {
 });
  
 list.addEventListener("click", function (event) {
-    // find the li that was clicked
     const li = event.target.closest("li");
     if (li === null) {
         return;
@@ -101,7 +99,6 @@ list.addEventListener("click", function (event) {
     const index = li.dataset.index;
  
     if (event.target.tagName === "BUTTON") {
-        // the Edit button was clicked
         const newName = prompt("Edit item name:", items[index].name);
         if (newName === null) {
             return;
@@ -118,7 +115,6 @@ list.addEventListener("click", function (event) {
             items[index].price = Number(newPrice);
         }
     } else {
-        // somewhere else on the item was clicked, so mark / unmark it
         items[index].bought = !items[index].bought;
     }
  
